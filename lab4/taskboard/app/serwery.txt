@@ -1,0 +1,29 @@
+        "value": [
+          "indiasouthcentral",
+          "austriaeast",
+          "denmarkeast",
+          "francecentral",
+          "germanywestcentral"
+        ]
+
+
+adress ip 
+
+148.81.247.6
+
+az provider register --namespace Microsoft.Compute --wait
+az provider register --namespace Microsoft.Network --wait
+
+
+
+time az vm create --resource-group gr-lab02 --name vm-lab02 --location polandcentral -image Canonical:ubuntu-24_04-lts:server:latest --
+
+
+
+
+Publiczny adres ip:
+
+az network public-ip show --resource-group rg-lab02 --name pip-lab02 --query ipAddress --output tsv
+51.116.181.5
+
+
